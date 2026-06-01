@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Propuesta Comercial - Módulo de Inventario | Keystone</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Background Gradients -->
+  <div class="bg-glow bg-glow-1"></div>
+  <div class="bg-glow bg-glow-2"></div>
+
+  <!-- Main Container -->
+  <main class="container">
+    
+    <!-- Header / Hero Section -->
+    <header class="proposal-header fade-in">
+      <div class="header-top">
+        <div class="logo-container">
+          <img src="logo.png" alt="Logo Keystone" class="logo-img">
+          <span class="logo-text">KEYSTONE</span>
+        </div>
+        <div class="badge-status">
+          <span class="pulse-dot"></span> PROPUESTA TÉCNICA Y COMERCIAL
+        </div>
+      </div>
+      
+      <div class="header-main">
+        <h1>Módulo Premium de Gestión de Inventarios a la Medida</h1>
+        <p class="subtitle">Modelo SaaS Corporativo e Infraestructura Dedicada de Alta Escalabilidad</p>
+      </div>
+
+      <div class="header-meta-grid">
+        <div class="meta-item">
+          <span class="meta-label">Elaborado por</span>
+          <span class="meta-value">Keystone</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Cliente / Alcance</span>
+          <span class="meta-value">Keystone (23 agencias)</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Presupuesto Inicial</span>
+          <span class="meta-value">$3,000.00 USD</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Fecha de Emisión</span>
+          <span class="meta-value" id="current-date">Junio 2026</span>
+        </div>
+        <div class="meta-item flex-row">
+          <button id="btn-print" class="btn btn-secondary no-print">
+            <i class="fa-solid fa-file-pdf"></i> Imprimir / Guardar PDF
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Nav Tabs (Section Selector) -->
+    <nav class="proposal-nav no-print">
+      <button class="nav-tab active" data-target="resumen">
+        <i class="fa-solid fa-chart-line"></i> Diagnóstico
+      </button>
+      <button class="nav-tab" data-target="alcance">
+        <i class="fa-solid fa-list-check"></i> Alcance Funcional
+      </button>
+      <button class="nav-tab" data-target="arquitectura">
+        <i class="fa-solid fa-server"></i> Stack & Cloud
+      </button>
+      <button class="nav-tab" data-target="cronograma">
+        <i class="fa-solid fa-calendar-days"></i> Hitos
+      </button>
+      <button class="nav-tab" data-target="planes">
+        <i class="fa-solid fa-calculator"></i> Calculadora & Planes
+      </button>
+      <button class="nav-tab" data-target="legal">
+        <i class="fa-solid fa-shield-halved"></i> Garantías
+      </button>
+    </nav>
+
+    <!-- Content Sections Wrapper -->
+    <div class="content-wrapper">
+
+      <!-- SECTION 1: Resumen Ejecutivo -->
+      <section id="resumen" class="content-section active fade-in-up">
+        <div class="section-card">
+          <div class="section-card-header">
+            <div class="section-icon-box">
+              <i class="fa-solid fa-magnifying-glass-chart"></i>
+            </div>
+            <h2>1. Resumen Ejecutivo y Diagnóstico del Proyecto</h2>
+          </div>
+          
+          <div class="grid-2col">
+            <div class="card-text-block">
+              <p class="highlight-text">
+                Esta propuesta detalla la estrategia de desarrollo e ingeniería para el nuevo Módulo de Inventario a la medida de Keystone.
+              </p>
+              <p>
+                La solución propuesta está específicamente diseñada para mitigar las fallas operativas y la pérdida de control que conllevan los procesos basados en papel y plantillas de Excel dispersas. 
+              </p>
+              <p>
+                Mediante una arquitectura nativa omnicanal y un enfoque híbrido, el proyecto está pensado para reducir al mínimo la resistencia operativa inicial de las agencias. Se garantiza esto mediante el diseño de interfaces de usuario idénticas a los requerimientos aprobados y, posteriormente, una transición segura y estructurada hacia un modelo SaaS (Software as a Service) de membresía mensual con infraestructura de nube dedicada y escalable.
+              </p>
+            </div>
+            
+            <div class="stats-panel">
+              <h3>Pilares Fundamentales</h3>
+              <div class="stat-card">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+                <div class="stat-info">
+                  <h4>Arquitectura Omnicanal</h4>
+                  <p>Operable en PC de escritorio, tablets y dispositivos móviles de bodega.</p>
+                </div>
+              </div>
+              <div class="stat-card">
+                <i class="fa-solid fa-server"></i>
+                <div class="stat-info">
+                  <h4>Soberanía de Datos (BYOI)</h4>
+                  <p>Infraestructura dedicada 100% propiedad del cliente, sin contratos de dependencia.</p>
+                </div>
+              </div>
+              <div class="stat-card">
+                <i class="fa-solid fa-circle-check"></i>
+                <div class="stat-info">
+                  <h4>Resistencia Cero</h4>
+                  <p>Interfaces adaptadas al flujo diario aprobado por sus propios operadores.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 2: Alcance Funcional -->
+      <section id="alcance" class="content-section fade-in-up">
+        <div class="section-card">
+          <div class="section-card-header">
+            <div class="section-icon-box">
+              <i class="fa-solid fa-list-check"></i>
+            </div>
+            <h2>2. Alcance Funcional del Módulo de Inventario</h2>
+          </div>
+          
+          <p class="section-description">
+            El alcance funcional de este sistema cubre exclusivamente el flujo logístico de almacenamiento y traslados transaccionales de bodegas principales y locales de agencias:
+          </p>
+
+          <div class="features-grid">
+            
+            <!-- Feature 1 -->
+            <div class="feature-card">
+              <div class="feature-header">
+                <div class="feature-icon bg-alert"><i class="fa-solid fa-bell"></i></div>
+                <h3>Tablero General e Indicadores</h3>
+              </div>
+              <p>
+                Alertas visuales inmediatas y en tiempo real en la pantalla de inicio (destacadas en color rojo) cuando el nivel de stock de cualquier insumo caiga a un nivel crítico: <strong>menor o igual al 10% del stock mínimo definido</strong>.
+              </p>
+              <div class="badge-tag">Crítico</div>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="feature-card">
+              <div class="feature-header">
+                <div class="feature-icon bg-primary"><i class="fa-solid fa-qrcode"></i></div>
+                <h3>Carga Omnicanal Física</h3>
+              </div>
+              <p>
+                Entradas versátiles de mercadería: digitalización manual directa, escaneo híbrido de códigos QR y barras (usando la cámara del dispositivo móvil con Capacitor o pistolas USB en computadoras) e importación de plantillas masivas de Excel con validación de fila exacta del error.
+              </p>
+              <div class="badge-tag">Eficiencia</div>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="feature-card">
+              <div class="feature-header">
+                <div class="feature-icon bg-accent"><i class="fa-solid fa-route"></i></div>
+                <h3>Doble Factor de Traslado</h3>
+              </div>
+              <p>
+                Control interagencias estricto. Al enviar insumos, se descuentan del stock de la Bodega Central en estado <em>"En Tránsito"</em>. El inventario de la sede de destino no se incrementará hasta que el operador local use la <strong>Pantalla de Aceptación de Ingreso</strong> y verifique la carga física.
+              </p>
+              <div class="badge-tag">Seguridad</div>
+            </div>
+
+            <!-- Feature 4 -->
+            <div class="feature-card">
+              <div class="feature-header">
+                <div class="feature-icon bg-info"><i class="fa-solid fa-database"></i></div>
+                <h3>Segmentación Histórica</h3>
+              </div>
+              <p>
+                Optimización y velocidad de base de datos para manejar hasta <strong>400,000 boletas de inventario trimestrales</strong>. Por defecto, la pantalla principal renderiza el trimestre activo, derivando consultas antiguas a una pestaña de Históricos con filtros optimizados.
+              </p>
+              <div class="badge-tag">Rendimiento</div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 3: Arquitectura & Tech Stack -->
+      <section id="arquitectura" class="content-section fade-in-up">
+        <div class="section-card">
+          <div class="section-card-header">
+            <div class="section-icon-box">
+              <i class="fa-solid fa-cubes"></i>
+            </div>
+            <h2>3. Arquitectura y Stack Tecnológico</h2>
+          </div>
+
+          <p class="section-description">
+            La pila de desarrollo se estructurará bajo un ecosistema moderno unificado en TypeScript (API-First), garantizando fluidez transaccional y máximo control de tipos:
+          </p>
+
+          <div class="tech-stack-grid">
+            <div class="tech-card">
+              <div class="tech-icon-circle"><i class="fa-brands fa-react"></i></div>
+              <h3>Frontend</h3>
+              <p>React.js (v19), Vite para empaquetado ultra rápido, TypeScript, Tailwind CSS (v4) y componentización shadcn/ui. Portabilidad nativa con Capacitor.</p>
+            </div>
+            <div class="tech-card">
+              <div class="tech-icon-circle"><i class="fa-solid fa-gears"></i></div>
+              <h3>Backend</h3>
+              <p>NestJS (v10) en TypeScript. Alertas bidireccionales en tiempo real mediante Socket.io. Autenticación y seguridad Passport.js reforzada con JWT.</p>
+            </div>
+            <div class="tech-card">
+              <div class="tech-icon-circle"><i class="fa-solid fa-database"></i></div>
+              <h3>Persistencia</h3>
+              <p>PostgreSQL optimizada como motor transaccional relacional central y Prisma ORM (v5.8) para el control integral de tipos seguros de base de datos.</p>
+            </div>
+            <div class="tech-card">
+              <div class="tech-icon-circle"><i class="fa-solid fa-cloud"></i></div>
+              <h3>Infraestructura</h3>
+              <p>Vercel/Netlify Premium CDN para cliente web, AWS AppRunner o Render Dedicado para la API y AWS S3 / Cloudflare R2 para almacenamiento de documentos.</p>
+            </div>
+          </div>
+
+          <div class="alert-box alert-warning">
+            <i class="fa-solid fa-triangle-exclamation alert-icon"></i>
+            <div class="alert-content">
+              <h4>3.1 Prerrequisitos de Integración de Power BI</h4>
+              <p>
+                Para el desarrollo de la reportería analítica embebida dentro del sistema web, el cliente se compromete a entregar desde la fase inicial de desarrollo una cuenta con suficientes privilegios de administración del <strong>Tenant de Microsoft</strong>, junto con las credenciales de la puerta de enlace (gateway). Este factor es de carácter obligatorio para habilitar el código de integración de tableros de stock a la base de datos PostgreSQL desde el primer día de pruebas.
+              </p>
+            </div>
+          </div>
+
+          <!-- Section 4: Cloud Costs inside Tech -->
+          <div class="divider-text">Costos Estimados de Infraestructura Cloud (BYOI)</div>
+          
+          <p class="section-description">
+            Bajo el esquema <strong>Bring Your Own Infrastructure (BYOI)</strong>, Keystone es el propietario absoluto de sus servidores y bases de datos. Los pagos se realizan de forma directa mediante la tarjeta corporativa de su institución asociada a los servicios en la nube:
+          </p>
+
+          <div class="table-responsive">
+            <table class="styled-table">
+              <thead>
+                <tr>
+                  <th>Servicio / Componente</th>
+                  <th>Especificación Técnica (Soporte Transaccional)</th>
+                  <th>Costo Estimado Mensual</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="table-service-name">
+                      <i class="fa-solid fa-database text-primary"></i>
+                      <span>Base de Datos PostgreSQL</span>
+                    </div>
+                  </td>
+                  <td>Instancia administrada dedicada SSD de alta velocidad y retención automatizada de backups. Respuesta en menos de 2 segundos.</td>
+                  <td class="table-cost">$70.00 USD <span class="cost-frequency">/ mes</span></td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="table-service-name">
+                      <i class="fa-solid fa-server text-accent"></i>
+                      <span>Servidor de API Backend</span>
+                    </div>
+                  </td>
+                  <td>Instancia de cómputo en Render o AWS AppRunner para procesamiento NestJS, autenticación JWT y túneles Socket.io en tiempo real.</td>
+                  <td class="table-cost">$50.00 USD <span class="cost-frequency">/ mes</span></td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="table-service-name">
+                      <i class="fa-solid fa-folder-open text-info"></i>
+                      <span>Almacenamiento de Archivos</span>
+                    </div>
+                  </td>
+                  <td>Repositorio AWS S3 o Cloudflare R2 para almacenamiento de cotizaciones PDF adjuntas a requisiciones mayores a Q10,000.</td>
+                  <td class="table-cost">$20.00 USD <span class="cost-frequency">/ mes</span></td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="table-service-name">
+                      <i class="fa-solid fa-globe text-success"></i>
+                      <span>Hosting Frontend & CDN</span>
+                    </div>
+                  </td>
+                  <td>Red global Vercel o Netlify Premium optimizada con certificados SSL automatizados para el cliente React 19.</td>
+                  <td class="table-cost">$10.00 USD <span class="cost-frequency">/ mes</span></td>
+                </tr>
+                <tr class="table-total-row">
+                  <td colspan="2">Costo Total Estimado de Infraestructura Base</td>
+                  <td class="table-cost">$150.00 USD <span class="cost-frequency">/ mes</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="note-box">
+            <i class="fa-solid fa-circle-info note-icon"></i>
+            <p>
+              <strong>Nota Justificativa:</strong> El pago directo de estos recursos por el cliente garantiza la propiedad absoluta del código compilado, la base de datos y la soberanía total sobre los datos logísticos de las 23 agencias, evitando dependencia de licencias opacas de terceros.
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- SECTION 4: Hitos y Cronograma -->
+      <section id="cronograma" class="content-section fade-in-up">
+        <div class="section-card">
+          <div class="section-card-header">
+            <div class="section-icon-box">
+              <i class="fa-solid fa-timeline"></i>
+            </div>
+            <h2>5. Plan de Trabajo y Cronograma de Hitos</h2>
+          </div>
+
+          <p class="section-description">
+            El desarrollo se estructurará bajo el marco ágil de Keystone, con un esfuerzo estimado de <strong>91 horas hombre</strong> (bajo análisis PERT). Cada hito concluye con un despliegue auditable en Staging antes del paso definitivo a producción:
+          </p>
+
+          <div class="timeline">
+            <!-- Hito 1 -->
+            <div class="timeline-item">
+              <div class="timeline-badge"><i class="fa-solid fa-rocket"></i></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <span class="timeline-badge-label">Hito 1 - 23 Horas</span>
+                  <h3>Inicialización, Infraestructura y Roles</h3>
+                </div>
+                <div class="timeline-body">
+                  <p>Aprovisionamiento de consolas cloud con correo del cliente. Modelado de PostgreSQL en Prisma ORM, configuración de autenticación JWT y menús dinámicos locales.</p>
+                  <ul class="timeline-deliverables">
+                    <li><i class="fa-solid fa-circle-check"></i> Base de Datos Modelada e Infraestructura Lista.</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Dashboard Base con Roles de Usuario.</li>
+                  </ul>
+                  <div class="timeline-payment">
+                    <span class="payment-percentage">Desembolso: 25% del total</span>
+                    <span class="payment-amount">$750.00 USD <span class="payment-local">(Q5,850.00)</span></span>
+                    <span class="payment-note">Anticipo Inicial</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Hito 2 -->
+            <div class="timeline-item">
+              <div class="timeline-badge"><i class="fa-solid fa-code"></i></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <span class="timeline-badge-label highlight">Hito 2 - 36 Horas</span>
+                  <h3>Core MVP - Lógica Transaccional</h3>
+                </div>
+                <div class="timeline-body">
+                  <p>Creación de pantallas de carga física (manual, escáner híbrido e importación masiva de Excel con desglose de fila exacta del error). Flujo y control de traslados interagencias con números correlativos y aceptación de ingreso local.</p>
+                  <ul class="timeline-deliverables">
+                    <li><i class="fa-solid fa-circle-check"></i> Pantallas de Carga y Lectura de Código Híbrida.</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Flujo de Traslado Doble Factor (Tránsito/Aceptación).</li>
+                  </ul>
+                  <div class="timeline-payment">
+                    <span class="payment-percentage">Desembolso: 35% del total</span>
+                    <span class="payment-amount">$1,050.00 USD <span class="payment-local">(Q8,190.00)</span></span>
+                    <span class="payment-note">Al Congelar Core</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Hito 3 -->
+            <div class="timeline-item">
+              <div class="timeline-badge"><i class="fa-solid fa-chart-simple"></i></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <span class="timeline-badge-label">Hito 3 - 19 Horas</span>
+                  <h3>Consumo Local, Power BI y Pruebas</h3>
+                </div>
+                <div class="timeline-body">
+                  <p>Módulo de rebaja automática de stock por consumo interno en agencias locales. Embebido técnico de tableros analíticos de Power BI. Despliegue en entorno de Staging (Pruebas) y entrega de accesos para la auditoría UAT.</p>
+                  <ul class="timeline-deliverables">
+                    <li><i class="fa-solid fa-circle-check"></i> Integración y Embebido de Power BI.</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Despliegue en Entorno de Pruebas (Staging).</li>
+                  </ul>
+                  <div class="timeline-payment">
+                    <span class="payment-percentage">Desembolso: 25% del total</span>
+                    <span class="payment-amount">$750.00 USD <span class="payment-local">(Q5,850.00)</span></span>
+                    <span class="payment-note">Al Iniciar Pruebas</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Hito 4 -->
+            <div class="timeline-item">
+              <div class="timeline-badge"><i class="fa-solid fa-circle-check"></i></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <span class="timeline-badge-label">Hito 4 - 13 Horas</span>
+                  <h3>Despliegue y Plan de Capacitación</h3>
+                </div>
+                <div class="timeline-body">
+                  <p>Paso definitivo del software a entorno de producción corporativo (Go-Live). Entrega de capacitación virtual en vivo para los operadores de las bodegas y soporte prioritario posdespliegue.</p>
+                  <ul class="timeline-deliverables">
+                    <li><i class="fa-solid fa-circle-check"></i> Go-Live y Producción de Servidores.</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Talleres de capacitación en vivo y manual PDF.</li>
+                  </ul>
+                  <div class="timeline-payment">
+                    <span class="payment-percentage">Desembolso: 15% del total</span>
+                    <span class="payment-amount">$450.00 USD <span class="payment-local">(Q3,510.00)</span></span>
+                    <span class="payment-note">Cierre del Proyecto</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 5: Planes de Servicio & Calculadora -->
+      <section id="planes" class="content-section">
+        <div class="section-card">
+          <div class="section-card-header">
+            <div class="section-icon-box">
+              <i class="fa-solid fa-calculator"></i>
+            </div>
+            <h2>6. Modelos de Contratación Comercial: Planes de Servicio</h2>
+          </div>
+
+          <p class="section-description">
+            La inversión fija por el desarrollo técnico e implementación llave en mano es de <strong>$3,000.00 USD</strong> (Q23,400.00 netos). Tras el lanzamiento, se estructuran dos opciones comerciales adaptadas al nivel de soporte deseado:
+          </p>
+
+          <!-- Interactive Calculator Widget -->
+          <div class="calculator-container no-print">
+            <div class="calculator-header">
+              <h3><i class="fa-solid fa-sliders"></i> Calculadora Comercial Interactiva</h3>
+              <p>Simula los costos mensuales de la suscripción SaaS según la cantidad de agencias y el plan elegido.</p>
+            </div>
+            
+            <div class="calc-body">
+              <div class="calc-control-group">
+                <div class="calc-slider-header">
+                  <label for="sucursales-range"><i class="fa-solid fa-building-user"></i> Cantidad de Sucursales / Locales:</label>
+                  <span id="sucursales-val" class="badge-value">23</span>
+                </div>
+                <input type="range" id="sucursales-range" min="1" max="100" value="23" class="modern-slider">
+                <div class="slider-marks">
+                  <span>1</span>
+                  <span>23 (Actual)</span>
+                  <span>50</span>
+                  <span>75</span>
+                  <span>100</span>
+                </div>
+              </div>
+
+              <div class="calc-results">
+                <!-- Option A Box -->
+                <div class="calc-result-box" id="calc-opt-a">
+                  <div class="calc-box-title">Opción A: Plan Estándar</div>
+                  <div class="calc-cost-breakdown">
+                    <div class="breakdown-row">
+                      <span>Suscripción SaaS (por sucursal):</span>
+                      <span>$200.00 USD</span>
+                    </div>
+                    <div class="breakdown-row">
+                      <span>Subtotal SaaS mensual:</span>
+                      <strong id="subtotal-saas-a">$4,600.00 USD</strong>
+                    </div>
+                    <div class="breakdown-row note-row">
+                      <span>Infraestructura Cloud (Facturado aparte por AWS/Render al cliente):</span>
+                      <span>+$150.00 USD</span>
+                    </div>
+                  </div>
+                  <div class="calc-total">
+                    <span class="total-label">Costo Licenciamiento SaaS</span>
+                    <span class="total-value" id="total-saas-a-val">$4,600.00 USD</span>
+                    <span class="total-qtz" id="total-saas-a-qtz">Q35,880.00 GTQ</span>
+                  </div>
+                </div>
+
+                <!-- Option B Box -->
+                <div class="calc-result-box highlighted" id="calc-opt-b">
+                  <div class="ribbon-popular">Recomendado</div>
+                  <div class="calc-box-title">Opción B: Administrado Premium</div>
+                  <div class="calc-cost-breakdown">
+                    <div class="breakdown-row">
+                      <span>Suscripción SaaS (por sucursal):</span>
+                      <span>$200.00 USD</span>
+                    </div>
+                    <div class="breakdown-row">
+                      <span>Subtotal SaaS mensual:</span>
+                      <strong id="subtotal-saas-b">$4,600.00 USD</strong>
+                    </div>
+                    <div class="breakdown-row">
+                      <span>Servidores Cloud (Administrados):</span>
+                      <span>$150.00 USD</span>
+                    </div>
+                    <div class="breakdown-row">
+                      <span>Recargo por Gestión (45%):</span>
+                      <span>$67.50 USD</span>
+                    </div>
+                  </div>
+                  <div class="calc-total">
+                    <span class="total-label">Pago Consolidado Mensual</span>
+                    <span class="total-value" id="total-saas-b-val">$4,817.50 USD</span>
+                    <span class="total-qtz" id="total-saas-b-qtz">Q37,576.50 GTQ</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Static Cards (Print & Reference) -->
+          <div class="plans-grid">
+            <!-- Plan A Card -->
+            <div class="plan-card">
+              <div class="plan-card-header">
+                <h3>Opción A: Plan Estándar</h3>
+                <div class="plan-pricing">
+                  <span class="plan-price-usd">$200.00 USD</span>
+                  <span class="plan-price-details">mensuales por local</span>
+                </div>
+                <p class="plan-summary-text">Gestión y control de servidores a cargo de la infraestructura de Keystone.</p>
+              </div>
+              
+              <ul class="plan-features">
+                <li><i class="fa-solid fa-check text-success"></i> Acceso ilimitado por local a todos los roles operativos.</li>
+                <li><i class="fa-solid fa-check text-success"></i> Soporte técnico funcional por dos (2) semanas post-lanzamiento.</li>
+                <li><i class="fa-solid fa-circle-info text-warning"></i> <strong>Responsabilidad del Cliente:</strong> Monitoreo de disponibilidad, parches de seguridad, bases de datos y la facturación directa de los servicios cloud ($150 USD/mes).</li>
+              </ul>
+            </div>
+
+            <!-- Plan B Card -->
+            <div class="plan-card plan-card-premium">
+              <div class="premium-badge">RECOMENDADO</div>
+              <div class="plan-card-header">
+                <h3>Opción B: Plan Administrado Premium</h3>
+                <div class="plan-pricing">
+                  <span class="plan-price-usd">$200.00 USD</span>
+                  <span class="plan-price-details">mensuales por local + 45% recargo de servidores</span>
+                </div>
+                <p class="plan-summary-text">Servidores, copias de seguridad y administración 100% en manos de nuestros ingenieros.</p>
+              </div>
+              
+              <ul class="plan-features">
+                <li><i class="fa-solid fa-check text-success"></i> Monitoreo de disponibilidad 24/7 de PostgreSQL y NestJS.</li>
+                <li><i class="fa-solid fa-check text-success"></i> Mantenimiento preventivo y correctivo mensual del servidor cloud.</li>
+                <li><i class="fa-solid fa-check text-success"></i> Automatización de políticas de respaldos georreferenciados diarios.</li>
+                <li><i class="fa-solid fa-check text-success"></i> Soporte continuado prioritario L2/L3 para resolución de incidencias en producción.</li>
+                <li><i class="fa-solid fa-check text-success"></i> Manuales operativos por rol e inducciones.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 6: Blindaje Contractual -->
+      <section id="legal" class="content-section">
+        <div class="section-card">
+          <div class="section-card-header">
+            <div class="section-icon-box">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            <h2>7. Blindaje Contractual y Garantías UAT</h2>
+          </div>
+
+          <p class="section-description">
+            El proceso de aseguramiento de calidad y control contractual se regirá estrictamente bajo las siguientes cláusulas del protocolo de Keystone:
+          </p>
+
+          <div class="legal-clauses-grid">
+            <div class="legal-card">
+              <div class="legal-card-title">
+                <i class="fa-solid fa-file-signature text-primary"></i>
+                <h3>Garantía de Aceptación UAT</h3>
+              </div>
+              <p>Las pruebas en Staging se limitarán a una ventana de 5 días hábiles guiada por dos usuarios clave de Keystone (Administrador Global y Bodeguero Central). Se validará el login JWT, importación de Excel con errores, escáner en bodegas y el doble factor de traslado.</p>
+            </div>
+
+            <div class="legal-card">
+              <div class="legal-card-title">
+                <i class="fa-solid fa-sliders text-accent"></i>
+                <h3>Control de Cambios Estricto</h3>
+              </div>
+              <p>Cualquier funcionalidad no descrita en esta propuesta o la reactivación del módulo de compras se procesará como un requerimiento adicional (Change Request) bajo una tarifa fija de <strong>Q200.00 por hora hombre de ingeniería</strong>.</p>
+            </div>
+
+            <div class="legal-card">
+              <div class="legal-card-title">
+                <i class="fa-solid fa-triangle-exclamation text-alert"></i>
+                <h3>Suspensión por Impago</h3>
+              </div>
+              <p>El retraso de más de 5 días hábiles en los pagos de licenciamiento mensual faculta a la suspensión inmediata del entorno cloud de producción (AWS/Render), bloqueando los accesos hasta la regularización de saldos, sin responsabilidad por interrupción de negocio.</p>
+            </div>
+
+            <div class="legal-card">
+              <div class="legal-card-title">
+                <i class="fa-solid fa-snowflake text-info"></i>
+                <h3>Congelamiento de Código (Feature Freeze)</h3>
+              </div>
+              <p>Al desplegar en Staging (Hito 3), el código se congelará por completo. Durante este periodo únicamente se corregirán errores (bugs) sobre lo programado. Las iteraciones de diseño o nuevos flujos se pospondrán para una futura versión v2.1.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="proposal-footer">
+      <div class="footer-divider"></div>
+      <div class="footer-content">
+        <p>&copy; 2026 Keystone. Todos los derechos reservados.</p>
+        <p class="no-print">Desarrollado con estándares de alta ingeniería y diseño interactivo.</p>
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- JavaScript -->
+  <script src="app.js"></script>
+</body>
+</html>

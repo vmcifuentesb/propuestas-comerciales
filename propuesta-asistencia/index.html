@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Propuesta Comercial - Sistema de Control de Asistencia | Keystone</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Background Gradients -->
+  <div class="bg-glow bg-glow-1"></div>
+  <div class="bg-glow bg-glow-2"></div>
+
+  <!-- Main Container -->
+  <main class="container">
+    
+    <!-- Header / Hero Section -->
+    <header class="proposal-header fade-in">
+      <div class="header-top">
+        <div class="logo-container">
+          <img src="logo.png" alt="Logo Keystone" class="logo-img">
+          <span class="logo-text">KEYSTONE</span>
+        </div>
+        <div class="badge-status">
+          <span class="pulse-dot"></span> PROPUESTA TÉCNICA Y COMERCIAL
+        </div>
+      </div>
+      
+      <div class="header-main">
+        <h1>Sistema de Control de Asistencia y Tiempos Corporativo</h1>
+        <p class="subtitle">Modelo SaaS de Alta Disponibilidad e Infraestructura Híbrida Dedicada</p>
+      </div>
+
+      <div class="header-meta-grid">
+        <div class="meta-item">
+          <span class="meta-label">Elaborado por</span>
+          <span class="meta-value">Keystone</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Cliente / Alcance</span>
+          <span class="meta-value">Keystone (10 sedes)</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Inversión de Desarrollo</span>
+          <span class="meta-value">Q52,000.00 GTQ</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Fecha de Emisión</span>
+          <span class="meta-value" id="current-date">Junio 2026</span>
+        </div>
+        <div class="meta-item flex-row">
+          <button id="btn-print" class="btn btn-secondary no-print">
+            <i class="fa-solid fa-file-pdf"></i> Imprimir / Guardar PDF
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Nav Tabs (Section Selector) -->
+    <nav class="proposal-nav no-print">
+      <button class="nav-tab active" data-target="resumen">
+        <i class="fa-solid fa-chart-line"></i> Diagnóstico
+      </button>
+      <button class="nav-tab" data-target="alcance">
+        <i class="fa-solid fa-list-check"></i> Alcance Funcional
+      </button>
+      <button class="nav-tab" data-target="arquitectura">
+        <i class="fa-solid fa-server"></i> Stack & Cloud
+      </button>
+      <button class="nav-tab" data-target="cronograma">
+        <i class="fa-solid fa-calendar-days"></i> Hitos
+      </button>
+      <button class="nav-tab" data-target="planes">
+        <i class="fa-solid fa-calculator"></i> Calculadora & Planes
+      </button>
+      <button class="nav-tab" data-target="legal">
+        <i class="fa-solid fa-shield-halved"></i> Garantías
+      </button>
+    </nav>
+
+    <!-- Content Sections Wrapper -->
+    <div class="content-wrapper">
+
+      <!-- SECTION 1: Resumen Ejecutivo -->
+      <section id="resumen" class="content-section active fade-in-up">
+        <div class="section-card">
+          <div class="section-card-header">
+            <div class="section-icon-box">
+              <i class="fa-solid fa-magnifying-glass-chart"></i>
+            </div>
+            <h2>1. Resumen Ejecutivo y Diagnóstico del Proyecto</h2>
+          </div>
+          
+          <div class="grid-2col">
+            <div class="card-text-block">
+              <p class="highlight-text">
+                Esta propuesta detalla la estrategia de desarrollo e ingeniería para el nuevo Sistema de Control de Asistencia y Tiempos a la medida.
+              </p>
+              <p>
+                La solución planteada mitiga de forma definitiva las fallas operativas, la pesada carga administrativa diaria de Recursos Humanos y los tradicionales "marcajes ciegos" (marcación fraudulenta) de los sistemas biométricos de hardware tradicionales. 
+              </p>
+              <p>
+                Diseñado bajo un enfoque híbrido incremental, el proyecto prioriza el control administrativo en su primera etapa para construir el nexo lógico y de negocio (portal web de gestión), y transiciona en la segunda etapa hacia el despliegue de modernas estaciones de marcación offline basadas en tabletas bajo un modelo de suscripción SaaS mensual extremadamente competitivo para las 10 sedes.
+              </p>
+            </div>
+            
+            <div class="stats-panel">
+              <h3>Pilares Fundamentales</h3>
+              <div class="stat-card">
+                <i class="fa-solid fa-user-check"></i>
+                <div class="stat-info">
+                  <h4>Control Biométrico Facial</h4>
+                  <p>Inferencia e inteligencia artificial local para reconocimiento facial a nivel de tablet.</p>
+                </div>
+              </div>
+              <div class="stat-card">
+                <i class="fa-solid fa-wifi-slash"></i>
+                <div class="stat-info">
+                  <h4>Sincronización Offline</h4>
+                  <p>Búfer de SQLite local en tablets para marcación ininterrumpida sin internet.</p>
+                </div>
+              </div>
+              <div class="stat-card">
+                <i class="fa-solid fa-circle-nodes"></i>
+                <div class="stat-info">
+                  <h4>Soberanía de Datos (BYOI)</h4>
+                  <p>Entorno cloud dedicado 100% propiedad y en las consolas en la nube del cliente.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 2: Alcance Funcional -->
+      <section id="alcance" class="content-section fade-in-up">
+        <div class="section-card">
+          <div class="section-card-header">
+            <div class="section-icon-box">
+              <i class="fa-solid fa-list-check"></i>
+            </div>
+            <h2>2. Alcance Funcional del Sistema por Etapas</h2>
+          </div>
+          
+          <p class="section-description">
+            El desarrollo técnico se divide estrictamente en dos etapas consecutivas para garantizar el orden de la arquitectura y la optimización de los entregables:
+          </p>
+
+          <!-- ETAPA 1 -->
+          <div class="divider-text">Etapa 1: Aplicación Administrativa (Portal Web)</div>
+          <p class="section-description">Foco en controlar la lógica de negocio, procesar marcajes crudos y preparar reportes de nómina auditable.</p>
+          
+          <div class="features-grid" style="margin-bottom: 2.5rem;">
+            <!-- Módulo 1 -->
+            <div class="feature-card">
+              <div class="feature-header">
+                <div class="feature-icon bg-primary"><i class="fa-solid fa-lock"></i></div>
+                <h3>Módulo 1: Seguridad y Acceso (RBAC)</h3>
+              </div>
+              <p>
+                Inicio de sesión administrativo seguro con JWT y refresco de tokens. Matriz de permisos jerárquicos configurada para 5 roles (ADMIN, RRHH, SUPERVISOR, Jefe de Sede/Agencia) en las 10 sedes. Registro detallado de auditoría (logs) para trazar modificaciones.
+              </p>
+              <div class="badge-tag">Seguridad</div>
+            </div>
+
+            <!-- Módulo 2 -->
+            <div class="feature-card">
+              <div class="feature-header">
+                <div class="feature-icon bg-primary"><i class="fa-solid fa-calendar-grid"></i></div>
+                <h3>Módulo 2: Roster y Gestión de Turnos</h3>
+              </div>
+              <p>
+                Configurador de plantillas de turnos (tolerancias, almuerzo, horas extras). Panel visual interactivo en cuadrícula (Roster Grid) para la asignación masiva semanal o mensual por sucursal. Duplicación de programaciones previas con un solo clic.
+              </p>
+              <div class="badge-tag">Planificación</div>
+            </div>
+
+            <!-- Módulo 3 -->
+            <div class="feature-card">
+              <div class="feature-header">
+                <div class="feature-icon bg-accent"><i class="fa-solid fa-brain"></i></div>
+                <h3>Módulo 3: Motor Heurístico de Reglas</h3>
+              </div>
+              <p>
+                El cerebro del backend en NestJS que procesa los registros de manera append-only para auditoría. Algoritmo clasificador automatizado que evalúa el timestamp crudo y calcula tardanzas, ausencias y horas extraordinarias basadas en las tolerancias.
+              </p>
+              <div class="badge-tag">Core Engine</div>
+            </div>
+
+            <!-- Módulo 4 -->
+            <div class="feature-card">
+              <div class="feature-header">
+                <div class="feature-icon bg-accent"><i class="fa-solid fa-envelope-open-text"></i></div>
+                <h3>Módulo 4: Aprobación de Extras & Incidencias</h3>
+              </div>
+              <p>
+                Bandeja interactiva para que supervisores validen u objeten las horas extras propuestas por el motor, con justificación obligatoria. Interfaz de corrección manual excepcional para incidencias con firma del jefe de sucursal autorizado.
+              </p>
+              <div class="badge-tag">Operaciones</div>
+            </div>
+
+            <!-- Módulo 5 -->
+            <div class="feature-card">
+              <div class="feature-header">
+                <div class="feature-icon bg-info"><i class="fa-solid fa-chart-simple"></i></div>
+                <h3>Módulo 5: Analítica de RRHH y Nómina</h3>
+              </div>
+              <p>
+                Dashboard gerencial con métricas de ausentismo y tardanzas. Exportador consolidado mensual en Excel y PDF estructurado para sistemas contables. Gestor de enrolamiento para emisión de PIN y códigos QR maestros de identificación.
+              </p>
+              <div class="badge-tag">Analítica</div>
+            </div>
+          </div>
+
+          <!-- ETAPA 2 -->
+          <div class="divider-text">Etapa 2: Aplicación de Cara al Empleado (Tablet / Kiosco)</div>
+          <p class="section-description">Foco en capturar la asistencia en las 10 agencias de forma ágil, segura y sin fraudes.</p>
+
+          <div class="features-grid">
+            <!-- Módulo 6 -->
+            <div class="feature-card">
+              <div class="feature-header">
+                <div class="feature-icon bg-alert"><i class="fa-solid fa-tablet-screen-button"></i></div>
+                <h3>Módulo 6: Interfaz Kiosco y QR/PIN</h3>
+              </div>
+              <p>
+                Pantalla optimizada en modo kiosco para tablets montadas, con reloj a gran escala y monitoreo del estado de la red. Escáner de cámara integrado para leer el código QR del carnet y teclado virtual táctil para PIN manual ante contingencias.
+              </p>
+              <div class="badge-tag">Estación</div>
+            </div>
+
+            <!-- Módulo 7 -->
+            <div class="feature-card">
+              <div class="feature-header">
+                <div class="feature-icon bg-alert"><i class="fa-solid fa-face-smile-wink"></i></div>
+                <h3>Módulo 7: Reconocimiento Facial y Liveness</h3>
+              </div>
+              <p>
+                Integración con Google ML Kit para extraer landmarks faciales y exigir prueba activa de vida (parpadeo). Inferencia local mediante TensorFlow Lite y FaceNet en la tablet para comparación en milisegundos contra el vector maestro.
+              </p>
+              <div class="badge-tag">Inteligencia Artificial</div>
+            </div>
+
+            <!-- Módulo 8 -->
+            <div class="feature-card">
+              <div class="feature-header">
+                <div class="feature-icon bg-success"><i class="fa-solid fa-database"></i></div>
+                <h3>Módulo 8: Búfer de Sincronización Offline</h3>
+              </div>
+              <p>
+                Base de datos SQLite local en la tablet para persistencia de vectores maestros y marcajes. Algoritmo de limpieza de duplicados (debouncing de 5 min) y cola de sincronización en segundo plano hacia NestJS al detectar conexión.
+              </p>
+              <div class="badge-tag">Resiliencia</div>
+            </div>
+
+            <!-- Módulo 9 -->
+            <div class="feature-card">
+              <div class="feature-header">
+                <div class="feature-icon bg-success"><i class="fa-solid fa-mobile"></i></div>
+                <h3>Módulo 9: Portal de Autoconsulta (PWA)</h3>
+              </div>
+              <p>
+                Vista personal (PWA) opcional para que el empleado revise sus marcajes del mes, horas laboradas consolidadas y el despliegue seguro de su carnet QR dinámico.
+              </p>
+              <div class="badge-tag">Autogestión</div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- SECTION 3: Arquitectura & Tech Stack -->
+      <section id="arquitectura" class="content-section fade-in-up">
+        <div class="section-card">
+          <div class="section-card-header">
+            <div class="section-icon-box">
+              <i class="fa-solid fa-cubes"></i>
+            </div>
+            <h2>3. Arquitectura, Stack Tecnológico y Requerimientos Cloud</h2>
+          </div>
+
+          <p class="section-description">
+            La pila tecnológica está diseñada para soportar a más de 800 empleados distribuidos en las 10 sucursales con alta concurrencia en horas pico:
+          </p>
+
+          <div class="tech-stack-grid">
+            <div class="tech-card">
+              <div class="tech-icon-circle"><i class="fa-brands fa-react"></i></div>
+              <h3>Web Administrativo</h3>
+              <p>React.js (v19), Vite, TypeScript y Tailwind CSS desplegado de forma global.</p>
+            </div>
+            <div class="tech-card">
+              <div class="tech-icon-circle"><i class="fa-brands fa-android"></i></div>
+              <h3>App Kiosco (Tablet)</h3>
+              <p>Aplicación Android nativa o portabilidad híbrida Capacitor optimizada para acceso a cámara e inferencia local TFLite.</p>
+            </div>
+            <div class="tech-card">
+              <div class="tech-icon-circle"><i class="fa-solid fa-gears"></i></div>
+              <h3>Backend API</h3>
+              <p>NestJS (v10), TypeScript y arquitectura backend desacoplada basada en eventos.</p>
+            </div>
+            <div class="tech-card">
+              <div class="tech-icon-circle"><i class="fa-solid fa-database"></i></div>
+              <h3>Persistencia Híbrida</h3>
+              <p>PostgreSQL relacional en la nube para el core y SQLite local ligero para el almacenamiento en las tablets.</p>
+            </div>
+          </div>
+
+          <!-- Section 3.1: Cloud Costs -->
+          <div class="divider-text">Planificación de Infraestructura Cloud de Producción (BYOI)</div>
+          
+          <p class="section-description">
+            Bajo el estándar <strong>BYOI (Bring Your Own Infrastructure)</strong>, el cliente es dueño absoluto de sus datos y servidores. Los costos estimados de consumo de AWS/Azure se desglosan a continuación:
+          </p>
+
+          <div class="table-responsive">
+            <table class="styled-table">
+              <thead>
+                <tr>
+                  <th>Servicio / Componente Cloud</th>
+                  <th>Especificación Técnica (Consumo Estimado)</th>
+                  <th>Rango de Costo Estimado</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="table-service-name">
+                      <i class="fa-solid fa-database text-primary"></i>
+                      <span>Base de Datos PostgreSQL</span>
+                    </div>
+                  </td>
+                  <td>AWS RDS PostgreSQL Multi-AZ. Almacenamiento SSD aislado en VPC privada con backups automáticos.</td>
+                  <td class="table-cost">$70.00 - $90.00 <span class="cost-frequency">USD / mes</span></td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="table-service-name">
+                      <i class="fa-solid fa-server text-accent"></i>
+                      <span>Servidor de Aplicación</span>
+                    </div>
+                  </td>
+                  <td>Amazon ECS Fargate / Docker. Contenedores autoadministrados con escalado para NestJS.</td>
+                  <td class="table-cost">$30.00 - $50.00 <span class="cost-frequency">USD / mes</span></td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="table-service-name">
+                      <i class="fa-solid fa-folder-open text-info"></i>
+                      <span>Almacenamiento de Vectores & PDF</span>
+                    </div>
+                  </td>
+                  <td>AWS S3 + CloudFront CDN. Repositorio de almacenamiento para fotos de marcas, vectores de rostros y reportes.</td>
+                  <td class="table-cost">$15.00 - $30.00 <span class="cost-frequency">USD / mes</span></td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="table-service-name">
+                      <i class="fa-solid fa-globe text-success"></i>
+                      <span>Red, DNS & Logs</span>
+                    </div>
+                  </td>
+                  <td>Route 53 + CloudWatch + Sentry. Trazabilidad de excepciones en vivo y firewall perimetral (WAF).</td>
+                  <td class="table-cost">$25.00 - $50.00 <span class="cost-frequency">USD / mes</span></td>
+                </tr>
+                <tr class="table-total-row">
+                  <td colspan="2">Costo Total Promedio Consolidado (Infraestructura Base)</td>
+                  <td class="table-cost">$150.00 USD <span class="cost-frequency">/ mes</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="note-box">
+            <i class="fa-solid fa-circle-info note-icon"></i>
+            <p>
+              <strong>Nota Justificativa:</strong> Estos recursos son contratados en las cuentas del cliente, garantizando la propiedad del código compilado, resguardo de datos biométricos de los empleados de forma local y cumplimiento de leyes de privacidad de datos.
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- SECTION 4: Hitos y Cronograma -->
+      <section id="cronograma" class="content-section fade-in-up">
+        <div class="section-card">
+          <div class="section-card-header">
+            <div class="section-icon-box">
+              <i class="fa-solid fa-timeline"></i>
+            </div>
+            <h2>4. Plan de Trabajo y Cronograma de Hitos</h2>
+          </div>
+
+          <p class="section-description">
+            El proyecto se ejecutará de forma estricta limitando el esfuerzo técnico a un máximo de <strong>10 horas a la semana durante 20 semanas</strong>, totalizando <strong>200 horas de ingeniería base</strong> para el MVP del software. Los desembolsos se estructuran en 4 hitos:
+          </p>
+
+          <div class="timeline">
+            <!-- Hito 1 -->
+            <div class="timeline-item">
+              <div class="timeline-badge"><i class="fa-solid fa-key"></i></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <span class="timeline-badge-label">Hito 1 - Semanas 1 a 5 (50 Horas)</span>
+                  <h3>Backend & Seguridad RBAC</h3>
+                </div>
+                <div class="timeline-body">
+                  <p>Modelado relacional en PostgreSQL mediante Prisma ORM, endpoints en NestJS, inicio de sesión seguro con JWT, asignación de los 5 roles y vistas básicas del Roster Grid en el frontend administrativo.</p>
+                  <ul class="timeline-deliverables">
+                    <li><i class="fa-solid fa-circle-check"></i> Base de datos modelada e infraestructura JWT lista.</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Dashboard básico y roles.</li>
+                  </ul>
+                  <div class="timeline-payment">
+                    <span class="payment-percentage">Desembolso: 30% del total</span>
+                    <span class="payment-amount">Q15,600.00 GTQ <span class="payment-local">($2,000.00 USD)</span></span>
+                    <span class="payment-note">Anticipo de Inicio</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Hito 2 -->
+            <div class="timeline-item">
+              <div class="timeline-badge"><i class="fa-solid fa-gears"></i></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <span class="timeline-badge-label highlight">Hito 2 - Semanas 6 a 10 (50 Horas)</span>
+                  <h3>Motor Heurístico Web</h3>
+                </div>
+                <div class="timeline-body">
+                  <p>Implementación del algoritmo clasificador automatizado de marcas, procesamiento de incidencias de horario, panel web de aprobación de horas extras y exportador de reportes de nómina RRHH.</p>
+                  <ul class="timeline-deliverables">
+                    <li><i class="fa-solid fa-circle-check"></i> Motor heurístico de marcajes programado.</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Centro de incidencias y reportes.</li>
+                  </ul>
+                  <div class="timeline-payment">
+                    <span class="payment-percentage">Desembolso: 40% del total</span>
+                    <span class="payment-amount">Q20,800.00 GTQ <span class="payment-local">($2,666.67 USD)</span></span>
+                    <span class="payment-note">Al Congelar Backend</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Hito 3 -->
+            <div class="timeline-item">
+              <div class="timeline-badge"><i class="fa-solid fa-tablet-screen-button"></i></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <span class="timeline-badge-label">Hito 3 - Semanas 11 a 15 (50 Horas)</span>
+                  <h3>Interfaz Kiosco & Offline</h3>
+                </div>
+                <div class="timeline-body">
+                  <p>Desarrollo de la aplicación Kiosco para tabletas Android, teclado táctil para código PIN, base de datos local SQLite y servicios en segundo plano para la cola de sincronización offline.</p>
+                  <ul class="timeline-deliverables">
+                    <li><i class="fa-solid fa-circle-check"></i> Aplicación Kiosco base offline-first.</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Sincronización automatizada SQLite a Postgres.</li>
+                  </ul>
+                  <div class="timeline-payment">
+                    <span class="payment-percentage">Desembolso: 20% del total</span>
+                    <span class="payment-amount">Q10,400.00 GTQ <span class="payment-local">($1,333.33 USD)</span></span>
+                    <span class="payment-note">Al Iniciar App Móvil</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Hito 4 -->
+            <div class="timeline-item">
+              <div class="timeline-badge"><i class="fa-solid fa-face-smile"></i></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <span class="timeline-badge-label">Hito 4 - Semanas 16 a 20 (50 Horas)</span>
+                  <h3>Integración Facial y Cierre</h3>
+                </div>
+                <div class="timeline-body">
+                  <p>Integración de Google ML Kit (liveness test) e inferencia local de FaceNet en las tabletas Android. Pruebas UAT cruzadas en Staging, despliegue definitivo a producción (Go-Live) y soporte.</p>
+                  <ul class="timeline-deliverables">
+                    <li><i class="fa-solid fa-circle-check"></i> Módulo biométrico facial optimizado.</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Go-Live e inicio de soporte de garantía.</li>
+                  </ul>
+                  <div class="timeline-payment">
+                    <span class="payment-percentage">Desembolso: 10% del total</span>
+                    <span class="payment-amount">Q5,200.00 GTQ <span class="payment-local">($666.67 USD)</span></span>
+                    <span class="payment-note">Aceptación y Cierre</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="note-box" style="margin-top: 2rem;">
+            <i class="fa-solid fa-circle-info note-icon"></i>
+            <p>
+              <strong>Inversión Total Fija por Ingeniería:</strong> Q52,000.00 GTQ netos. Los desembolsos se programan por hitos funcionales auditables.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 5: Planes de Servicio & Calculadora -->
+      <section id="planes" class="content-section">
+        <div class="section-card">
+          <div class="section-card-header">
+            <div class="section-icon-box">
+              <i class="fa-solid fa-calculator"></i>
+            </div>
+            <h2>5. Modelos de Contratación Comercial: Planes de Servicio SaaS</h2>
+          </div>
+
+          <p class="section-description">
+            Para reducir los costos de adquisición iniciales, se elimina el cobro comercial del desarrollo del software base base y se traslada a una <strong>Membresía Mensual de $500.00 USD por Sede</strong>. Con base en esto, se estructuran dos planes de servicio:
+          </p>
+
+          <!-- Interactive Calculator Widget -->
+          <div class="calculator-container no-print">
+            <div class="calculator-header">
+              <h3><i class="fa-solid fa-sliders"></i> Calculadora Comercial de Asistencia</h3>
+              <p>Simula los costos mensuales de la suscripción SaaS según la cantidad de sedes de marcación activas.</p>
+            </div>
+            
+            <div class="calc-body">
+              <div class="calc-control-group">
+                <div class="calc-slider-header">
+                  <label for="sucursales-range"><i class="fa-solid fa-building"></i> Cantidad de Sedes / Sucursales:</label>
+                  <span id="sucursales-val" class="badge-value">10</span>
+                </div>
+                <input type="range" id="sucursales-range" min="1" max="50" value="10" class="modern-slider">
+                <div class="slider-marks">
+                  <span>1</span>
+                  <span>10 (Sedes Actuales)</span>
+                  <span>25</span>
+                  <span>35</span>
+                  <span>50</span>
+                </div>
+              </div>
+
+              <div class="calc-results">
+                <!-- Option A Box -->
+                <div class="calc-result-box" id="calc-opt-a">
+                  <div class="calc-box-title">Opción A: Plan Estándar</div>
+                  <div class="calc-cost-breakdown">
+                    <div class="breakdown-row">
+                      <span>Suscripción SaaS (por sede):</span>
+                      <span>$500.00 USD</span>
+                    </div>
+                    <div class="breakdown-row">
+                      <span>Subtotal SaaS mensual:</span>
+                      <strong id="subtotal-saas-a">$5,000.00 USD</strong>
+                    </div>
+                    <div class="breakdown-row note-row">
+                      <span>Infraestructura Cloud (Facturado y administrado por el cliente):</span>
+                      <span>+$150.00 USD</span>
+                    </div>
+                  </div>
+                  <div class="calc-total">
+                    <span class="total-label">Costo Licenciamiento SaaS</span>
+                    <span class="total-value" id="total-saas-a-val">$5,000.00 USD</span>
+                    <span class="total-qtz" id="total-saas-a-qtz">Q39,000.00 GTQ</span>
+                  </div>
+                </div>
+
+                <!-- Option B Box -->
+                <div class="calc-result-box highlighted" id="calc-opt-b">
+                  <div class="ribbon-popular">Recomendado</div>
+                  <div class="calc-box-title">Opción B: Administrado Premium</div>
+                  <div class="calc-cost-breakdown">
+                    <div class="breakdown-row">
+                      <span>Suscripción SaaS (por sede):</span>
+                      <span>$500.00 USD</span>
+                    </div>
+                    <div class="breakdown-row">
+                      <span>Subtotal SaaS mensual:</span>
+                      <strong id="subtotal-saas-b">$5,000.00 USD</strong>
+                    </div>
+                    <div class="breakdown-row">
+                      <span>Infraestructura Cloud Base:</span>
+                      <span>$150.00 USD (Q1,165.00)</span>
+                    </div>
+                    <div class="breakdown-row">
+                      <span>Recargo por Gestión (45%):</span>
+                      <span>Q524.25 GTQ</span>
+                    </div>
+                  </div>
+                  <div class="calc-total">
+                    <span class="total-label">Pago Consolidado Mensual</span>
+                    <span class="total-value" id="total-saas-b-val">$5,000.00 USD + Q1,689.25 GTQ</span>
+                    <span class="total-qtz" id="total-saas-b-qtz">Q40,689.25 GTQ</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Static Cards -->
+          <div class="plans-grid">
+            <!-- Plan A Card -->
+            <div class="plan-card">
+              <div class="plan-card-header">
+                <h3>Opción A: Plan Estándar</h3>
+                <div class="plan-pricing">
+                  <span class="plan-price-usd">$500.00 USD</span>
+                  <span class="plan-price-details">mensuales por sede</span>
+                </div>
+                <p class="plan-summary-text">El cliente asume de forma directa la gestión técnica del entorno cloud de servidores.</p>
+              </div>
+              
+              <ul class="plan-features">
+                <li><i class="fa-solid fa-check text-success"></i> Acceso ilimitado por sede a los 5 roles definidos.</li>
+                <li><i class="fa-solid fa-check text-success"></i> Soporte técnico correctivo mensual ilimitado para incidencias de software.</li>
+                <li><i class="fa-solid fa-circle-info text-warning"></i> <strong>Responsabilidad del Cliente:</strong> Facturación y monitoreo de servidores cloud, parches del sistema operativo base e infraestructura AWS/Azure.</li>
+              </ul>
+            </div>
+
+            <!-- Plan B Card -->
+            <div class="plan-card plan-card-premium">
+              <div class="premium-badge">RECOMENDADO</div>
+              <div class="plan-card-header">
+                <h3>Opción B: Plan Administrado Premium</h3>
+                <div class="plan-pricing">
+                  <span class="plan-price-usd">$500.00 USD <span style="font-size: 1rem; font-weight: 500;">/ sede</span></span>
+                  <span class="plan-price-details">+ Q1,689.25 GTQ de recargo fijo de infraestructura cloud</span>
+                </div>
+                <p class="plan-summary-text">Servidores, respaldos y monitoreo técnico llave en mano absorbidos 100% por Keystone.</p>
+              </div>
+              
+              <ul class="plan-features">
+                <li><i class="fa-solid fa-check text-success"></i> Monitoreo automatizado continuo mediante Sentry y CloudWatch.</li>
+                <li><i class="fa-solid fa-check text-success"></i> Mantenimiento preventivo y correctivo proactivo mensual de la API y DB.</li>
+                <li><i class="fa-solid fa-check text-success"></i> Respaldos diarios automatizados georreferenciados de PostgreSQL.</li>
+                <li><i class="fa-solid fa-check text-success"></i> Aislamiento perimetral de red en VPC dedicado.</li>
+                <li><i class="fa-solid fa-check text-success"></i> Entrega de manual operativo por rol y capacitación a RRHH.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 6: Blindaje Contractual -->
+      <section id="legal" class="content-section">
+        <div class="section-card">
+          <div class="section-card-header">
+            <div class="section-icon-box">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            <h2>6. Blindaje Contractual, Homologación y Protocolo</h2>
+          </div>
+
+          <p class="section-description">
+            El proceso de aseguramiento de calidad y control contractual se regirá estrictamente bajo las siguientes cláusulas:
+          </p>
+
+          <div class="legal-clauses-grid">
+            <div class="legal-card">
+              <div class="legal-card-title">
+                <i class="fa-solid fa-tablet text-primary"></i>
+                <h3>Homologación de Tablets</h3>
+              </div>
+              <p>Keystone proveerá equipos de prueba para la calibración del reconocimiento facial local (TFLite/ML Kit). Al finalizar la Etapa 1, se entregará un informe con las tablets Android recomendadas oficialmente. La adquisición de hardware corre por cuenta del cliente.</p>
+            </div>
+
+            <div class="legal-card">
+              <div class="legal-card-title">
+                <i class="fa-solid fa-clock text-accent"></i>
+                <h3>Soporte Integral Mensual</h3>
+              </div>
+              <p>El costo mensual por sede cubre el soporte correctivo completo de la aplicación, incluyendo ayuda a supervisores para correcciones excepcionales de turnos y anomalías en el procesamiento del motor de marcas.</p>
+            </div>
+
+            <div class="legal-card">
+              <div class="legal-card-title">
+                <i class="fa-solid fa-triangle-exclamation text-alert"></i>
+                <h3>Suspensión por Impago</h3>
+              </div>
+              <p>El retraso de más de 5 días hábiles en los pagos de la suscripción faculta a la suspensión del entorno cloud de producción (AWS/Azure), apagando las estaciones de marcación en las tablets y los accesos de gestión sin responsabilidad por interrupción de negocio.</p>
+            </div>
+
+            <div class="legal-card">
+              <div class="legal-card-title">
+                <i class="fa-solid fa-snowflake text-info"></i>
+                <h3>Congelamiento de Código</h3>
+              </div>
+              <p>Al desplegar en Staging para el Hito 3 de cada bloque, el código se congelará por completo. Durante este periodo únicamente se corregirán errores (bugs) funcionales. Nuevas pantallas o reglas se pospondrán para una futura versión v2.1.</p>
+            </div>
+
+            <div class="legal-card">
+              <div class="legal-card-title">
+                <i class="fa-solid fa-cash-register text-success"></i>
+                <h3>Garantía de Continuidad</h3>
+              </div>
+              <p>No se iniciará ningún hito de desarrollo nuevo si existe un saldo pendiente de pago en el hito del bloque anterior. Esto protege la liquidez y continuidad del proyecto.</p>
+            </div>
+
+            <div class="legal-card">
+              <div class="legal-card-title">
+                <i class="fa-solid fa-sliders text-warning"></i>
+                <h3>Control de Cambios</h3>
+              </div>
+              <p>Cualquier modificación al flujo de asistencia o reportes fuera del MVP se procesará como un requerimiento adicional (Change Request) bajo una tarifa fija de <strong>Q250.00 por hora hombre</strong> de ingeniería.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="proposal-footer">
+      <div class="footer-divider"></div>
+      <div class="footer-content">
+        <p>&copy; 2026 Keystone. Todos los derechos reservados.</p>
+        <p class="no-print">Desarrollado con estándares de alta ingeniería y diseño interactivo.</p>
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- JavaScript -->
+  <script src="app.js"></script>
+</body>
+</html>
